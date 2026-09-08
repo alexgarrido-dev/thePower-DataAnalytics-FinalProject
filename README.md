@@ -39,12 +39,13 @@ Algunos archivos de datos se han comprimido (.zip) en el repositorio por límite
 
 Fuentes de datos
 
-Nombre	athletes.xlsx	y activities_running.csv
-Origen	GoldenCheetah OpenData (Kaggle)	Mismo dataset, tabla de actividades
-Formato	Excel	y CSV
-Contenido	1 fila por atleta: edad, género, peso, nº de actividades por deporte	1 fila por actividad de running: fecha, distancia, tiempo, HR, desnivel...
-Clave de unión	id	id
-Nota sobre el origen de los datos
+Nombre:	athletes.xlsx	y activities_running.csv
+Origen:	GoldenCheetah OpenData (Kaggle)	Mismo dataset, tabla de actividades
+Formato:	Excel	y CSV
+Contenido:	1 fila por atleta: edad, género, peso, nº de actividades por deporte & 1 fila por actividad de running: fecha, distancia, tiempo, HR, desnivel...
+Clave de unión:	id	id
+
+Nota sobre el origen de los datos:
 
 El archivo activities.csv original de Kaggle contiene más de 2 millones de actividades de ~6.000 atletas, de múltiples deportes (ciclismo, running, natación...). Por límites de tamaño de archivo, se aplicó un filtro sport == 'Run' antes de subir el archivo al repositorio, reduciendo el CSV a las 238.558 actividades de running. Este es un pre-filtro documentado, no un paso de limpieza — la limpieza real (valores imposibles, duplicados, nulos) se aplica después, sobre este subconjunto, y queda recogida íntegramente en FinalProject_Import&Merge.ipynb.
 
